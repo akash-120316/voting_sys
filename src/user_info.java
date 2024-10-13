@@ -66,7 +66,7 @@ public class user_info {
                      phone = sc.nextInt();
                     System.out.println("Enter the age");
                      age = sc.nextInt();
-                    ob.initialise(id, name, phone, age);
+                    ob.update(id, name, phone, age);
                     break;
                 case 3:
 
