@@ -22,11 +22,12 @@ public class user_info {
         phone[id] = p;
         age[id] = ag;
     }
-  public void display(int i) {
-   System.out.println("ID=" + i);
-   System.out.println("ID=" + name[i]);
-   System.out.println("ID=" + phone[i]);
-   System.out.println("ID=" + age[i]);
+
+    public void display(int i) {
+        System.out.println("ID=" + i);
+        System.out.println("ID=" + name[i]);
+        System.out.println("ID=" + phone[i]);
+        System.out.println("ID=" + age[i]);
     }
 
     public void delete(int i) {
@@ -35,7 +36,7 @@ public class user_info {
         age[i] = 0;
     }
 
-    public static void main(String []args) {
+    public static void main(String[] args) {
 
         user_info ob = new user_info();
 
@@ -49,7 +50,7 @@ public class user_info {
                     int id = sc.nextInt();
                     sc.nextLine();
                     System.out.println("Enter the name");
-                    String name=sc.nextLine();
+                    String name = sc.nextLine();
                     System.out.println("Enter the phone");
                     int phone = sc.nextInt();
                     System.out.println("Enter the age");
@@ -58,28 +59,28 @@ public class user_info {
                     break;
                 case 2:
                     System.out.println("Enter the id to update");
-                     id = sc.nextInt();
+                    id = sc.nextInt();
                     sc.nextLine();
                     System.out.println("Enter the name");
-                     name = sc.nextLine();
+                    name = sc.nextLine();
                     System.out.println("Enter the phone");
-                     phone = sc.nextInt();
+                    phone = sc.nextInt();
                     System.out.println("Enter the age");
-                     age = sc.nextInt();
+                    age = sc.nextInt();
                     ob.update(id, name, phone, age);
                     break;
                 case 3:
 
                     System.out.println("Enter the id to display");
-                     id = sc.nextInt();
+                    id = sc.nextInt();
 
-                  ob.display(id);
+                    ob.display(id);
                     break;
                 case 4:
                     System.out.println("Enter the id to delete");
-                  id = sc.nextInt();
+                    id = sc.nextInt();
 
-                  ob.delete(id);
+                    ob.delete(id);
 
                     break;
                 case 5:
