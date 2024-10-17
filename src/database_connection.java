@@ -5,7 +5,7 @@ class DatabaseOperation {
     protected Connection connect() {
         String url = "jdbc:mysql://localhost:3306/voting_base";
         String user = "root";
-        String password = "PUBGraa@2708";
+        String password = "";
 
         Connection conn = null;
         try {
