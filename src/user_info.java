@@ -42,19 +42,28 @@ public class user_info {
 
         Scanner sc = new Scanner(System.in);
         while (true) {
+
+
             System.out.println("Enter choice");
+            System.out.println("1-initialise");
+            System.out.println("1-update");
+            System.out.println("1-display");
+            System.out.println("1-delete");
+            int id;
+            String name;
+            int phone,age;
             int choice = sc.nextInt();
             switch (choice) {
                 case 1:
                     System.out.println("Enter the id to register");
-                    int id = sc.nextInt();
+                     id = sc.nextInt();
                     sc.nextLine();
                     System.out.println("Enter the name");
-                    String name = sc.nextLine();
+                     name = sc.nextLine();
                     System.out.println("Enter the phone");
-                    int phone = sc.nextInt();
+                    phone = sc.nextInt();
                     System.out.println("Enter the age");
-                    int age = sc.nextInt();
+                     age = sc.nextInt();
                     ob.initialise(id, name, phone, age);
                     break;
                 case 2:

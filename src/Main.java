@@ -20,18 +20,19 @@ public class Main {
 
     public static void main(String[] args) {
         Main ob = new Main();
-        Candidate_name os = new Candidate_name();
+        int num;
+//        Candidate_name os = new Candidate_name();
         Scanner sc = new Scanner(System.in);
         while (true) {
             int choice = sc.nextInt();
             switch (choice) {
                 case 1:
-                    int num = sc.nextInt();
+                     num = sc.nextInt();
                     ob.initialise(num);
                     break;
                 case 2:
                     num = sc.nextInt();
-                    ob.initialise(num);
+                    ob.update(num);
                     break;
                 case 3:
 
